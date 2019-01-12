@@ -9,6 +9,11 @@
         document.getElementById('deuxiemebus').innerHTML = data[1];
     });
 
+    $.get('http://restratpws.azurewebsites.net/api/missions/100100098/from/PC_1552_1554/way/a', function(data, status){
+        document.getElementById('prochainbusauteuil').innerHTML = data[0];
+        document.getElementById('deuxiemebusauteuil').innerHTML = data[1];
+    });
+
     $.get('http://restratpws.azurewebsites.net/api/missions/100112003/from/T3b_428/way/r', function(data, status){
         document.getElementById('prochaintram').innerHTML = data[0];
         document.getElementById('deuxiemetram').innerHTML = data[1];
