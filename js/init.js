@@ -24,4 +24,8 @@ function refreshUI(){
         document.getElementById('prochaintram').innerHTML = data[0];
         document.getElementById('deuxiemetram').innerHTML = data[1];
     });
+};
+
+function refreshPage() {
+    location.reload();
 }
