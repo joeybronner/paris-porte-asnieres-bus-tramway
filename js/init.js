@@ -24,6 +24,12 @@ function refreshUI(){
         document.getElementById('prochaintram').innerHTML = data[0];
         document.getElementById('deuxiemetram').innerHTML = data[1];
     });
+
+    $.get('http://restratpws.azurewebsites.net/api/missions/100100052/from/52_13_101/way/a', function(data, status){
+        document.getElementById('prochainbus52').innerHTML = data[0];
+        document.getElementById('deuxiemebus52').innerHTML = data[1];
+    });
+
 };
 
 function refreshPage() {
