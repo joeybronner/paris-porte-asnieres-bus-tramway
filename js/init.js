@@ -56,7 +56,7 @@ function refreshUI(){
     });
 
     // Metro Ligne 10
-    $.get('https://restratpws.azurewebsites.net/api/missions/100110010/from/427/way/a', function(data, status){
+    $.get('https://restratpws.azurewebsites.net/api/missions/100110010/from/428/way/a', function(data, status){
         document.getElementById('metro_michelange_direction_gareausterlitz').innerHTML = data[0];
         document.getElementById('metro_michelange_direction_gareausterlitz_2').innerHTML = data[1];
     });
